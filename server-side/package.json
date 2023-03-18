@@ -1,0 +1,17 @@
+{
+  "name": "server-side",
+  "version": "1.0.0",
+  "description": "This package will contain all the modules and file related to server of coding platform - CodeHat.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aditya Gupta",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "python-shell": "^5.0.0"
+  }
+}
