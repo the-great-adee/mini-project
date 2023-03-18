@@ -41,9 +41,3 @@ const submitCode = () => {
   )
 };
 export default App;
-
-
-/*
-def add(a, b):
-  return a + b
-*/
