@@ -106,7 +106,7 @@ export default function HeadNavBar() {
                         {({ active }) => (
                           <Link
                             to="/python"
-                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
+                            className={classNames(active ? 'bg-gray-300' : '', 'block px-4 py-2 text-sm text-gray-800')}
                           >
                             Python
                           </Link>
@@ -117,7 +117,7 @@ export default function HeadNavBar() {
                         {({ active }) => (
                           <Link
                             to="/java"
-                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
+                            className={classNames(active ? 'bg-gray-300' : '', 'block px-4 py-2 text-sm text-gray-800')}
                           >
                             Java
                           </Link>
@@ -128,7 +128,7 @@ export default function HeadNavBar() {
                         {({ active }) => (
                           <Link
                             to="/cpp"
-                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
+                            className={classNames(active ? 'bg-gray-300' : '', 'block px-4 py-2 text-sm text-gray-800')}
                           >
                             C++
                           </Link>
@@ -172,23 +172,18 @@ export default function HeadNavBar() {
                     <Menu.Items className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                       <Menu.Item>
                       {user ? (
-                          <>   
-                          <span class="block px-4 py-2 text-sm text-gray-700"> 
-                            Logged in as {user}
+                          <>  
+                          <Link to="/user" className = 'block px-4 py-2 text-sm text-gray-800 hover:bg-gray-300'>
+                            Your Profile
+                          </Link> 
+                          <span class="block px-4 py-2 text-sm text-gray-700 hover:bg-pink-700 hover:text-white"> 
+                            Logged in as: {user}
                           </span>
-                              
-                            <button
-                              onClick={() => auth.signOut()}
-                            >
-                              <span class="bg-gray-100 block px-4 py-2 text-sm text-gray-700">
-                              Logout
-                              </span>
-                            </button>
                           </>
                         ) : (
                           <Link
                             to="/login"
-                            className= 'bg-gray-100 block px-4 py-2 text-sm text-gray-700'>
+                            className= 'bg-gray-100 block px-4 py-2 text-sm text-gray-800'>
                             Login
                           </Link>
                         )}
@@ -196,6 +191,18 @@ export default function HeadNavBar() {
                     </Menu.Items>
                   </Transition>
                 </Menu>
+                {/* This is for the logout button, it'll only appear the user has logged in using login-page in our Platform using email and password. */}
+                {user ? (
+                  <>
+                  <button onClick={() => auth.signOut()}>
+                        <span class="bg-gray-100 block ml-10 px-4 py-2 text-sm text-gray-700">
+                              Logout
+                        </span>
+                  </button>
+                  </>
+                ) : (<></>)
+
+                }
               </div>
             </div>
           </div>

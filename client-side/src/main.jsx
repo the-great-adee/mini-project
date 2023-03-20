@@ -12,6 +12,7 @@ import OnlineComplier from './components/online-complier'
 import PythonComplier from './components/python-complier'
 import CppComplier from './components/cpp-complier'
 import JavaComplier from './components/java-complier'
+import ProfilePage from './components/profilepage'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <Router>
@@ -25,7 +26,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path="/python" element={<PythonComplier />} />
       <Route path="/java" element={<JavaComplier />} />
       <Route path="/cpp" element={<CppComplier />} />
-      
+      <Route path="/user" element={<ProfilePage />} />
     </Routes>
   </Router>
 )
