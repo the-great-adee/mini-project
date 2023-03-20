@@ -10,6 +10,7 @@ import HeadNavBar from './components/head-nav-bar';
 import Participate from './components/participate'; 
 import FootNavBar from './components/foot-nav-bar';
 import Starter from './components/starter';
+import AuthContext from './components/auth';
 function App() {
   return (
     <>

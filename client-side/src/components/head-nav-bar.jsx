@@ -2,6 +2,8 @@ import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Link } from 'react-router-dom'
+import { useState, useEffect } from 'react';
+import { auth } from '../firebase';
 
 const navigation = [
   { name: 'Home', to: '/', current: true },
@@ -15,6 +17,18 @@ function classNames(...classes) {
 }
 
 export default function HeadNavBar() {
+  const [user, setUser] = useState(null);
+  useEffect(() => {
+    const unsubscribe = auth.onAuthStateChanged((user) => {
+      if (user) {
+        setUser(user.email);
+      } else {
+        setUser(null);
+      }
+    });
+  
+    return () => unsubscribe();
+  }, []);
   return (
     <Disclosure as="nav" className="bg-gray-800">
       {({ open }) => (
@@ -65,6 +79,7 @@ export default function HeadNavBar() {
                         {item.name}
                       </Link>
                     ))}
+                    
                   </div>
                 </div>
                 {/* This here to drop down menu for multiple compliers */}
@@ -156,11 +171,24 @@ export default function HeadNavBar() {
                   >
                     <Menu.Items className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                       <Menu.Item>
-                        {({ active }) => (
+                      {user ? (
+                          <>   
+                          <span class="block px-4 py-2 text-sm text-gray-700"> 
+                            Logged in as {user}
+                          </span>
+                              
+                            <button
+                              onClick={() => auth.signOut()}
+                            >
+                              <span class="bg-gray-100 block px-4 py-2 text-sm text-gray-700">
+                              Logout
+                              </span>
+                            </button>
+                          </>
+                        ) : (
                           <Link
                             to="/login"
-                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
-                          >
+                            className= 'bg-gray-100 block px-4 py-2 text-sm text-gray-700'>
                             Login
                           </Link>
                         )}
