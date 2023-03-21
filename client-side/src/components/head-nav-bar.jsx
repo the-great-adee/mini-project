@@ -48,7 +48,7 @@ export default function HeadNavBar() {
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
-                  <img
+                  {/* <img
                     className="block h-8 w-auto lg:hidden right-36"
                     src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
                     alt="Your Company"
@@ -57,7 +57,7 @@ export default function HeadNavBar() {
                     className="relative h-8 w-auto lg:block right-20 hidden"
                     src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
                     alt="Your Company"
-                  />
+                  /> */}
                   <span class="relative items-center text-3xl font-extrabold right-20 dark:text-white">
                     <Link to="/">
                     CodeHat

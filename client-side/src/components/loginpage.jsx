@@ -25,7 +25,7 @@ const LoginPage = () => {
         <section class="bg-gray-50 dark:bg-white-900 px-4 lg:px-16" style={{backgroundImage: "linear-gradient(to right, #38a3a5, #57cc99)", color: "#fff"}}>
   <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
       <a href="#" class="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-black">
-          <img class="w-8 h-8 mr-2" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/logo.svg" alt="logo"/>
+          {/* <img class="w-8 h-8 mr-2" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/logo.svg" alt="logo"/> */}
           <span class="flex items-center text-5xl font-extrabold dark:text-white">
           CodeHat™
           </span>
