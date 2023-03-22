@@ -42,7 +42,7 @@ function FootNavBar() {
                           <a href="#" class="hover:underline">Privacy Policy</a>
                       </li>
                       <li>
-                          <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                          <Link to="/terms" class="hover:underline">Terms &amp; Conditions</Link>
                       </li>
                   </ul>
               </div>
