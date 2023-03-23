@@ -14,7 +14,7 @@ import CppComplier from './components/cpp-complier'
 import JavaComplier from './components/java-complier'
 import ProfilePage from './components/profilepage'
 import TermsConditions from './components/terms&conditions'
-
+import AddTwoIntegers from './components/addtwointegers'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <Router>
@@ -30,6 +30,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path="/cpp" element={<CppComplier />} />
       <Route path="/user" element={<ProfilePage />} />
       <Route path="/terms" element={<TermsConditions />} />
+      <Route path="/addtwointegers" element={<AddTwoIntegers />} />
     </Routes>
   </Router>
 )

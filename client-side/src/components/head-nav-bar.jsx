@@ -9,7 +9,6 @@ const navigation = [
   { name: 'Home', to: '/', current: true },
   { name: 'Participate', to: '/participate', current: false },
   { name: 'Practice', to: '/practice', current: false },
-  { name: 'Online IDE', to: '/ide', current: false },
 ]
 
 function classNames(...classes) {
@@ -58,7 +57,7 @@ export default function HeadNavBar() {
                     src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
                     alt="Your Company"
                   /> */}
-                  <span class="relative items-center text-3xl font-extrabold right-20 dark:text-white">
+                  <span className="flex items-center text-3xl font-extrabold right-20 dark:text-white">
                     <Link to="/">
                     CodeHat
                     </Link>
@@ -79,11 +78,7 @@ export default function HeadNavBar() {
                         {item.name}
                       </Link>
                     ))}
-                    
-                  </div>
-                </div>
-                {/* This here to drop down menu for multiple compliers */}
-                <Menu as="div" className="relative ml-3">
+                    <Menu as="div" className="relative ml-3">
                   <div>
                     <Menu.Button className="flex">
                       <span className="sr-only">Open user menu</span>
@@ -138,6 +133,10 @@ export default function HeadNavBar() {
                     </Menu.Items>
                   </Transition>
                 </Menu>
+                  </div>
+                </div>
+                {/* This here to drop down menu for multiple compliers */}
+                
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <button
@@ -176,7 +175,7 @@ export default function HeadNavBar() {
                           <Link to="/user" className = 'block px-4 py-2 text-sm text-gray-800 hover:bg-gray-300'>
                             Your Profile
                           </Link> 
-                          <span class="block px-4 py-2 text-sm text-gray-700 hover:bg-pink-700 hover:text-white"> 
+                          <span className="block px-4 py-2 text-sm text-gray-700 hover:bg-pink-700 hover:text-white"> 
                             Logged in as: {user}
                           </span>
                           </>
@@ -195,7 +194,7 @@ export default function HeadNavBar() {
                 {user ? (
                   <>
                   <button onClick={() => auth.signOut()}>
-                        <span class="bg-gray-100 block ml-10 px-4 py-2 text-sm text-gray-700">
+                        <span className="bg-gray-100 block ml-10 px-4 py-2 text-sm text-gray-700">
                               Logout
                         </span>
                   </button>
