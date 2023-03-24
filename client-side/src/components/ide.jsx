@@ -19,11 +19,11 @@ const Ide= ()=> {
           console.log(data);
           if(data.passOrFail === 'True\r\n')
           {
-            alert('✅ passed');
+            alert('✅ Correct Code. All Test Cases Passed.');
           }
           else
           {
-            alert('❌ failed');
+            alert('❌ Failed');
           }
         }
           );

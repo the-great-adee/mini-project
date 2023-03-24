@@ -8,12 +8,12 @@ const Participate = () =>{
         <HeadNavBar />
         
 
-        <div id="controls-carousel" class="relative w-full" data-carousel="static">
+        <div id="controls-carousel" class="relative w-full h-screen" data-carousel="static">
 
     <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
 
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="https://agcdn-1d97e.kxcdn.com/wp-content/uploads/2020/04/alphagamma-Code-Gladiators-2020-opportunities.jpg" alt="..."/>
+            <img src="./contest1.png" alt="..."/>
         </div>
 
         <div class="hidden duration-700 ease-in-out" data-carousel-item="active">

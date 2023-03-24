@@ -15,6 +15,7 @@ import JavaComplier from './components/java-complier'
 import ProfilePage from './components/profilepage'
 import TermsConditions from './components/terms&conditions'
 import AddTwoIntegers from './components/addtwointegers'
+import Answer from './components/answer'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <Router>
@@ -31,6 +32,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path="/user" element={<ProfilePage />} />
       <Route path="/terms" element={<TermsConditions />} />
       <Route path="/addtwointegers" element={<AddTwoIntegers />} />
+      <Route path="/answer" element={<Answer />} />
+        
     </Routes>
   </Router>
 )

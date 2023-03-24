@@ -58,7 +58,7 @@ function Practice() {
               </Link>
               </td>
               <td class="text-lg text-gray-900 font-light px-6 py-4 whitespace-nowrap justify-center">
-              <Link>
+              <Link to="/answer">
               <img src="https://img.icons8.com/color/24/null/one-page.png"/>
               </Link>
               </td>
