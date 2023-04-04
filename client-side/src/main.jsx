@@ -16,6 +16,7 @@ import ProfilePage from './components/profilepage'
 import TermsConditions from './components/terms&conditions'
 import AddTwoIntegers from './components/addtwointegers'
 import Answer from './components/answer'
+import Vision from './components/vision'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <Router>
@@ -33,6 +34,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path="/terms" element={<TermsConditions />} />
       <Route path="/addtwointegers" element={<AddTwoIntegers />} />
       <Route path="/answer" element={<Answer />} />
+      <Route path="/vision" element={<Vision />} />
+
         
     </Routes>
   </Router>

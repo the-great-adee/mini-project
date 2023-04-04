@@ -17,9 +17,9 @@ const ProfilePage = () => {
                             src="https://lavinephotography.com.au/wp-content/uploads/2017/01/PROFILE-Photography-112.jpg"
                             alt=""/>
                     </div>
-                    <h1 class="text-gray-900 font-bold text-xl leading-8 my-1">Joe Goldberg</h1>
+                    <h1 class="text-gray-900 font-bold text-xl leading-8 my-1">Aditya Gupta</h1>
                     <h3 class="text-gray-600 font-lg text-semibold leading-6">Future billionaire coder</h3>
-                    <p class="text-sm text-gray-500 hover:text-gray-600 leading-6">Hey! I'm Joe, a upcoming billionaire business with a lot of Computer Science knowledge. <b>Help change the world.</b></p>
+                    <p class="text-sm text-gray-500 hover:text-gray-600 leading-6">Hey! I'm Adi, a upcoming billionaire business with a lot of Computer Science knowledge. <b>Help change the world.</b></p>
                     <ul
                         class="bg-gray-100 text-gray-600 hover:text-gray-700 hover:shadow py-2 px-3 mt-3 divide-y rounded shadow-sm">
                         <li class="flex items-center py-3">
@@ -49,13 +49,13 @@ const ProfilePage = () => {
                     </div>
                     <div class="grid grid-cols-3">
                         <div class="text-center my-2">
-                        <a href="#" class="text-gray-700">
+                        <a href="https://github.com/the-great-adee" class="text-gray-700">
                             <img class="h-16 w-16 rounded-full mx-auto" src="https://img.icons8.com/ios-filled/500/000000/github.png" alt=""/>
                             GitHub
                             </a>
                         </div>
                         <div class="text-center my-2">
-                        <a href="#" class="text-gray-700">
+                        <a href="https://www.linkedin.com/in/aditya-gupta-b88b70226/" class="text-gray-700">
                             <img class="h-16 w-16 rounded-full mx-auto" src="https://img.icons8.com/ios-glyphs/500/000000/linkedin-circled--v1.png" alt=""/>
                             LinkedIn
                             </a>
@@ -94,11 +94,11 @@ const ProfilePage = () => {
                         <div class="grid md:grid-cols-2 text-sm">
                             <div class="grid grid-cols-2">
                                 <div class="px-4 py-2 font-semibold">First Name</div>
-                                <div class="px-4 py-2">Joe</div>
+                                <div class="px-4 py-2">Adi</div>
                             </div>
                             <div class="grid grid-cols-2">
                                 <div class="px-4 py-2 font-semibold">Last Name</div>
-                                <div class="px-4 py-2">Goldberg</div>
+                                <div class="px-4 py-2">Gupta</div>
                             </div>
                             <div class="grid grid-cols-2">
                                 <div class="px-4 py-2 font-semibold">Gender</div>
@@ -106,29 +106,29 @@ const ProfilePage = () => {
                             </div>
                             <div class="grid grid-cols-2">
                                 <div class="px-4 py-2 font-semibold">Contact No.</div>
-                                <div class="px-4 py-2">+1 998001001</div>
+                                <div class="px-4 py-2">+91 7985791945</div>
                             </div>
                             <div class="grid grid-cols-2">
                                 <div class="px-4 py-2 font-semibold">Current Address</div>
-                                <div class="px-4 py-2">Baltimore, Maryland, United States</div>
+                                <div class="px-4 py-2">Model Colony, Pune, Maharashtra</div>
                             </div>
                             <div class="grid grid-cols-2">
                                 <div class="px-4 py-2 font-semibold">Birthday</div>
-                                <div class="px-4 py-2">1 November 1986</div>
+                                <div class="px-4 py-2">7 November 2003</div>
                             </div>
                             <div class="grid grid-cols-2">
                                 <div class="px-4 py-2 font-semibold">Email.</div>
                                 <div class="px-4 py-2">
-                                    <a class="text-blue-800" href="mailto:jane@example.com">joe@netflix.com</a>
+                                    <a class="text-blue-800" href="mailto:jane@example.com">adg2121227@sicsr.ac.in</a>
                                 </div>
                             </div>
                             <div class="grid grid-cols-2">
                                 <div class="px-4 py-2 font-semibold">Views</div>
-                                <div class="px-4 py-2">19.24 million+</div>
+                                <div class="px-4 py-2">3</div>
                             </div>
                         </div>
                     </div>
-                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                    <a href="https://www.linkedin.com/in/aditya-gupta-b88b70226/">
                     <button class="block w-full text-blue-800 text-sm font-semibold rounded-lg hover:bg-gray-100 focus:outline-none focus:shadow-outline focus:bg-gray-100 hover:shadow-xs p-3 my-4">Show Full Information</button></a>
                 </div>
 
@@ -152,19 +152,19 @@ const ProfilePage = () => {
                             </div>
                             <ul class="list-inside space-y-2">
                                 <li>
-                                    <div class="text-teal-600">You - Season 4</div>
-                                    <div class="text-gray-500 text-xs">February 2023 - Now</div>
+                                    <div class="text-teal-600">Java</div>
+                                    <div class="text-gray-500 text-xs">February 2022 - Now</div>
                                 </li>
                                 <li>
-                                    <div class="text-teal-600">You - Season 3</div>
+                                    <div class="text-teal-600">C++</div>
                                     <div class="text-gray-500 text-xs">October 2021</div>
                                 </li>
                                 <li>
-                                    <div class="text-teal-600">You - Season 2</div>
+                                    <div class="text-teal-600">Python Coder</div>
                                     <div class="text-gray-500 text-xs">December 2019</div>
                                 </li>
                                 <li>
-                                    <div class="text-teal-600">You - Season 1</div>
+                                    <div class="text-teal-600">Web-Dev</div>
                                     <div class="text-gray-500 text-xs">September 2018</div>
                                 </li>
                             </ul>
@@ -185,11 +185,11 @@ const ProfilePage = () => {
                             </div>
                             <ul class="list-inside space-y-2">
                                 <li>
-                                    <div class="text-teal-600">Lewis & Clark College</div>
-                                    <div class="text-gray-500 text-xs">2 Years</div>
+                                    <div class="text-teal-600">MVM</div>
+                                    <div class="text-gray-500 text-xs">4 Years</div>
                                 </li>
                                 <li>
-                                    <div class="text-teal-600">Santa Monica College</div>
+                                    <div class="text-teal-600">T.H.S.</div>
                                     <div class="text-gray-500 text-xs">10 Years</div>
                                 </li>
                             </ul>

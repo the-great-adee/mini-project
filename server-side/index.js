@@ -8,15 +8,15 @@ const PORT = 3000;
 const app = express();
 
 app.use(cors({
-    origin: 'http://localhost:5173', // Replace with the URL of your React app
-    optionsSuccessStatus: 200 // Some legacy browsers (IE11, various SmartTVs) choke on 204 
+    origin: 'http://localhost:5173', 
+    optionsSuccessStatus: 200 
   }));
   
 app.use(express.json());
 
 app.options('*', cors({
-    origin: 'http://localhost:5173', // Replace with the URL of your React app
-    optionsSuccessStatus: 200 // Some legacy browsers (IE11, various SmartTVs) choke on 204 
+    origin: 'http://localhost:5173', 
+    optionsSuccessStatus: 200  
   }));
   
 
@@ -40,7 +40,7 @@ app.post('/python', (req, res) => {
 
     py.on('close', (code) => {
     console.log(`child process close all stdio with code ${code}`);
-    // send data to browser
+    // I'm sending the code data to browser
     console.log(dataToSend);
     res.json({passOrFail:dataToSend});
     });

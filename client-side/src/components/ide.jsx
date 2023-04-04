@@ -8,7 +8,7 @@ import HeadNavBar from './head-nav-bar';
 import FootNavBar from './foot-nav-bar';
 import Problem from './problem';
 const Ide= ()=> {
-    const [code, setCode] = useState('import sys\ndef add(a, b):\n    return a + b\nif __name__ == "__main__":\n    a = int(sys.argv[1])\n    b = int(sys.argv[2])\n    result = int(sys.argv[3])\n    print(add(a, b) == result)'); 
+    const [code, setCode] = useState('import sys\ndef add(a, b):\n    #Write your code from here\nif __name__ == "__main__":\n    a = int(sys.argv[1])\n    b = int(sys.argv[2])\n    result = int(sys.argv[3])\n    print(add(a, b) == result)'); 
     const [testCases, setTestCases] = useState([]);
   const submitCode = () => {
     axios

@@ -3,7 +3,7 @@ import App from "./App.css?inline"
 import { Link } from 'react-router-dom';
 function FootNavBar() {
   return (
-    <footer class="bg-black dark:bg-gray-900">
+    <footer class="bg-black dark:bg-gray-900 bottom">
     <div class="mx-auto w-full container p-4 sm:p-6">
         <div class="md:flex md:justify-between">
           <div class="mb-6 md:mb-0">
@@ -17,7 +17,7 @@ function FootNavBar() {
                   <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
                   <ul class="text-gray-600 dark:text-gray-400">
                       <li class="mb-4">
-                          <Link to="#" class="hover:underline">Learn</Link>
+                          <a href="https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/" class="hover:underline">Learn</a>
                       </li>
                       <li>
                           <Link to="#" class="hover:underline">Community</Link>
@@ -28,10 +28,10 @@ function FootNavBar() {
                   <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Company</h2>
                   <ul class="text-gray-600 dark:text-gray-400">
                       <li class="mb-4">
-                          <Link to="#" class="hover:underline ">Vision</Link>
+                          <Link to="/vision" class="hover:underline ">Vision</Link>
                       </li>
                       <li>
-                          <Link to="#" class="hover:underline">About Us</Link>
+                          <a href="https://www.linkedin.com/in/aditya-gupta-b88b70226/" class="hover:underline">About Us</a>
                       </li>
                   </ul>
               </div>
